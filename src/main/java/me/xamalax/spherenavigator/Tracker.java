@@ -29,10 +29,6 @@ public class Tracker {
             trackList.forEach((player, players) -> {
 
                 Location center = player.getEyeLocation();
-
-                // draw spheres for this player if the following conditions satisfied:
-                // + target is online
-                // + target is in the same world
                 for (Player player1 : players) {
                     if (!(player1.isOnline() && player.getWorld() == player1.getWorld()))
                         continue;
