@@ -1,0 +1,10 @@
+name: SphereNavigator
+version: '${project.version}'
+main: me.xamalax.spherenavigator.SphereNavigator
+api-version: '1.20'
+commands:
+  spt:
+    usage: 'spt <add/rem/status>'
+    aliases:
+      - sphereTracker
+    description: 'Track the location of any player on the server! (Warning: You must be in the same world)'
